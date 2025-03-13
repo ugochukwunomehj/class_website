@@ -1,0 +1,137 @@
+body{
+    margin: 0px;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+#myHeader{
+    height: 100px;
+    width: 100%;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0px;
+    z-index: 200;
+}
+#topInfoWrap{
+    display: block;
+    height: 50px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #232637;
+    /* background-color: #234262; */
+}
+#topInfo span{
+    color: #f1f1f1;
+}
+#topInfo a{
+    text-decoration: none;
+    color: #f1f1f1;
+}
+#phone{
+    margin-right: 5px;
+}
+#spaceBar{
+    margin-left: 14px;
+    margin-right: 14px;
+}
+#topInfo aside{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+#topInfo{
+    display: flex;
+    height: 50px;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 1080px;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    font-weight: 700;
+}
+
+#myNav{
+    height: 100px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #fff;  
+    box-shadow: 0px 0px 5px #dbdbdb;
+    position: relative;
+}
+#navWrapper{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    max-width: 1080px;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    /* border: 2px solid red; */
+}
+.navInnerHolder img{
+    height: 37px;
+    width: auto;
+}
+.actionBtn{
+    height: 51px;
+    outline: none;
+    border: none;
+    background-color: #234262;
+    border: 2px solid #234262;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 5px;
+    margin-left: 2rem;
+    width: 211px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+#applyBtn:hover, #applyBtn:active{
+    color: #234262;
+    background-color: #fff;
+}
+.navLinks{
+    text-decoration: none;
+    color: #234262;
+    font-weight: bolder;
+    padding: 5px 10px;
+}
+/* Hero sect.. */
+#heroSect::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url(banner.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#heroSect{
+    /* height: 100vh; */
+    height: calc(100vh - 150px);
+    margin-top: 0px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    /* border: 2px solid green; */
+    margin: auto;
+    position: relative;
+}
+#heroTxt{
+    z-index: 100;
+}
+#baseSect{
+    position: relative;
+    height: auto;
+    min-height: 1000px;
+    width: 100%;
+    box-sizing: border-box;
+    /* margin-top: 150px; */
+}
