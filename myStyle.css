@@ -121,11 +121,97 @@ body{
     box-sizing: border-box;
     display: flex;
     /* border: 2px solid green; */
+    justify-content: flex-start;
+    align-items: center;
     margin: auto;
     position: relative;
 }
+#heroTxt > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+    }
+#heroTxt > h1{
+    font-size: 75px;
+    font-weight: 700;
+    font-family: "Abril Fatface", cursive;
+    color: #234262;
+    max-width: 50%;
+    margin-left: 0rem;
+    line-height: 1.15;
+    margin-bottom: 2rem;
+}
 #heroTxt{
     z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    box-sizing: border-box;
+    margin-left: 15%;
+    width: 80%;
+}
+#heroBtn1, #heroBtn2{
+    margin-left: 0px;
+    height: 60px;
+}
+#heroBtn2{
+ background-color: #fff !important;
+ border: 2px solid #234262;
+ color: #234262;
+ width: 200px;
+ align-self: flex-end;
+ margin-left: 1rem;
+}
+#heroBtn1{
+    background-color: #1fc2d9;
+    border: 2px solid #1fc2d9;
+    color: #fff;
+    width: 183px;
+    /* animation-name: Changecolor; */
+    animation: ChangeColor 4s linear 1s infinite alternate;
+}
+@keyframes ChangeColor {
+     0%{
+        background-color: #1fc2d9;
+        border: 2px solid #1fc2d9;
+        color: #fff;
+     } 
+     50%{
+        background-color: #d91f8c;
+        border: 2px solid #d9d61f;
+        color: #fff;
+     } 
+     70%{
+        background-color: #d91f1f;
+        border: 2px solid #1fc2d9;
+        color: #fff;
+     } 
+     100%{
+        background-color: #d9541f;
+        border: 2px solid #35d91f;
+        color: #110202;
+     }
+     /* from{
+        background-color: #1fc2d9;
+        border: 2px solid #1fc2d9;
+        color: #fff;
+     } 
+     to{
+        background-color: #d9541f;
+        border: 2px solid #35d91f;
+        color: #110202;
+     } */
+}
+
+#heroBtn2:hover{
+ background-color: #234262bb !important;
+ color: #fff;
+}
+#heroBtn1:hover{
+    background-color: #fff;
+    color: #1fc2d9;
 }
 #baseSect{
     position: relative;
@@ -134,4 +220,11 @@ body{
     width: 100%;
     box-sizing: border-box;
     /* margin-top: 150px; */
+}
+#lgBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    height: 22px;
 }
